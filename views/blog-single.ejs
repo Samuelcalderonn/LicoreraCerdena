@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Liquor Store - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+  	<div class="wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center">
+            <p class="mb-0 phone pl-md-2">
+              <a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +57 1234 567</a> 
+              <a href="#"><span class="fa fa-paper-plane mr-1"></span> plataformaspe@gmail.com</a>
+            </p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-md-end">
+            <div class="social-media mr-4">
+            <p class="mb-0 d-flex">
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+            </p>
+        </div>
+        <div class="reg">
+					<p class="mb-0">
+						<a href="#" style="margin-right: 20px;">Registrarse</a>
+						<a href="#">Iniciar sesión</a>
+					</p>
+				</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+    <a class="navbar-brand" href="/">Licorera <span>Cerdeña</span></a>
+    <div class="order-lg-last btn-group">
+    <a href="#" class="btn-cart dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="flaticon-shopping-bag"></span>
+      <div class="d-flex justify-content-center align-items-center"><small>3</small></div>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+      <% cartItems.forEach(item => { %>
+        <div class="dropdown-item d-flex align-items-start">
+          <div class="img" style="background-image: url('<%= item.imageUrl %>');"></div>
+          <div class="text pl-3">
+          <h4><%= item.name %></h4>
+          <p class="mb-0">
+            <a href="#" class="price"><%= item.price %></a>
+            <span class="quantity ml-3">Cantidad: <%= item.quantity %></span>
+          </p>
+          </div>
+        </div>
+        <% }); %>
+          <a class="dropdown-item text-center btn-link d-block w-100" href="/cart">
+            Mirar todos
+            <span class="ion-ios-arrow-round-forward"></span>
+          </a>
+        </div>
+    </div>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menú
+    </button>
+  
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+      <li class="nav-item active"><a href="/" class="nav-link">Inicio</a></li>
+      <li class="nav-item"><a href="/about" class="nav-link">Nosotros</a></li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+      <div class="dropdown-menu" aria-labelledby="dropdown04">
+        <a class="dropdown-item" href="/product">Productos</a>
+        <a class="dropdown-item" href="/offers">Ofertas</a>
+        <a class="dropdown-item" href="/cart">Carro de compras</a>
+        <a class="dropdown-item" href="/checkout">Pago</a>
+      </div>
+      </li>
+      <li class="nav-item"><a href="/blog" class="nav-link">Novedades</a></li>
+      <li class="nav-item"><a href="/contact" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+    </div>
+    </nav>
+    <!-- END nav -->
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('img/bg_2.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate mb-5 text-center">
+          	<p class="breadcrumbs mb-0"><span class="mr-2"><a href="/">Inicio <i class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a href="/blog">Blog <i class="fa fa-chevron-right"></i></a></span> <span>Detalles Novedades <i class="fa fa-chevron-right"></i></span></p>
+            <h2 class="mb-0 bread">Novedades</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate">
+          	<p>
+              <img src="img/image_1.jpg" alt="" class="img-fluid">
+            </p>
+            <h2 class="mb-3">Lanzamiento Exclusivo: Vodka Premium con Infusión de Frutas</h2>
+            <p>En el vibrante mundo de las bebidas alcohólicas, la innovación y la calidad son esenciales para captar la atención de los consumidores más exigentes. Con esto en mente, estamos emocionados de anunciar el lanzamiento de una nueva y exclusiva oferta que promete elevar el estándar en el mercado de vodkas: nuestro Vodka Premium con Infusión de Frutas. Este producto combina la pureza y suavidad de un vodka de alta gama con la frescura y el sabor natural de las frutas, ofreciendo una experiencia única para los amantes de las bebidas sofisticadas.</p>
+            <p>Nuestro Vodka Premium no es solo una bebida, es una obra maestra de la destilación y la infusión de frutas. Cada botella es el resultado de un proceso meticuloso que comienza con la selección de los mejores granos y aguas puras.</p>
+            <h2 class="mb-3 mt-5">#2. Variedades y Sabores</h2>
+            <p>Este vodka no solo es una excelente opción para beber solo o con hielo, sino que también es una base ideal para cócteles sofisticados. La infusión de frutas realza los sabores de una amplia gama de mezclas, desde clásicos modernos hasta creaciones innovadoras. Ya sea que estés organizando una fiesta elegante o simplemente disfrutando de una noche tranquila en casa, el Vodka Premium con Infusión de Frutas se adapta perfectamente a cualquier ocasión.</p>
+            <p>
+              <img src="img/image_2.jpg" alt="" class="img-fluid">
+            </p>
+            <p>Nuestro compromiso con la calidad no termina con la elección de ingredientes excepcionales. La producción de nuestro vodka se realiza con prácticas sostenibles y responsables, garantizando que cada botella no solo ofrezca un producto superior, sino que también respete el medio ambiente. Desde el cultivo de las frutas hasta el proceso de embotellado, cada paso está diseñado para minimizar el impacto ambiental y maximizar la excelencia del producto final.</p>
+            <p>El Vodka Premium con Infusión de Frutas está disponible exclusivamente en tiendas seleccionadas y a través de nuestra tienda en línea. Esta exclusividad asegura que nuestros clientes disfruten de un producto verdaderamente único y difícil de encontrar en el mercado. Cada botella está cuidadosamente empaquetada en un envase elegante que refleja la sofisticación y la exclusividad del producto, haciendo de este vodka un regalo perfecto para cualquier ocasión especial.</p>
+            <p>El lanzamiento de nuestro Vodka Premium con Infusión de Frutas marca un hito en el mundo de las bebidas alcohólicas, combinando la pureza del vodka con la frescura vibrante de las frutas en una experiencia inigualable. Con su variedad de sabores exquisitos, versatilidad en cócteles y un firme compromiso con la calidad, este vodka está destinado a convertirse en la elección favorita de los conocedores y entusiastas de las bebidas premium. No pierdas la oportunidad de ser parte de esta exclusiva oferta y descubre por ti mismo la magia de nuestro Vodka Premium con Infusión de Frutas.</p>
+            <div class="tag-widget post-tag-container mb-5 mt-5">
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">Feria de Flores</a>
+                <a href="#" class="tag-cloud-link">Tecnología</a>
+                <a href="#" class="tag-cloud-link">Cervezas</a>
+                <a href="#" class="tag-cloud-link">Cursos</a>
+              </div>
+            </div>
+            
+            <div class="about-author d-flex p-4 bg-light">
+              <div class="bio mr-5">
+                <img src="img/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
+              </div>
+              <div class="desc">
+                <h3>Sebastián Soto</h3>
+                <p>Sebastián es un reconocido periodista y experto en bebidas con más de una década de experiencia en la industria de las bebidas alcohólicas. Su trayectoria abarca una amplia gama de temas relacionados con la destilación, las tendencias del mercado y la innovación en el sector de bebidas premium. Con un profundo conocimiento de las técnicas de producción y una aguda capacidad para identificar y comunicar las últimas tendencias, Carlos se ha establecido como una voz influyente en el campo.</p>
+              </div>
+            </div>
+
+
+            <div class="pt-5 mt-5">
+              <h3 class="mb-5">6 Comentarios</h3>
+              <ul class="comment-list">
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="img/person_1.jpg" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>John Doe</h3>
+                    <div class="meta">Abril 12, 2024 1:21am</div>
+                    <p>¡Qué emocionante leer sobre el nuevo Vodka Premium con Infusión de Frutas! Carlos Martínez ha capturado perfectamente la esencia del producto y ha hecho un gran trabajo resaltando la calidad y la exclusividad. Los sabores mencionados parecen realmente innovadores y tentadores. Estoy ansiosa por probarlo y ver si cumple con las altas expectativas que el artículo ha creado. ¡Gran trabajo en la cobertura y la presentación del producto!</p>
+                    <p><a href="#" class="reply">Contestar</a></p>
+                  </div>
+                </li>
+
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="img/person_1.jpg" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>John Doe</h3>
+                    <div class="meta">Marzo 12, 2024 5:21am</div>
+                    <p>Carlos Martínez ha hecho un excelente trabajo con esta pieza. La descripción de los sabores y el proceso de producción es muy atractiva y bien informada. Me encanta cómo destaca el compromiso con la sostenibilidad, lo que añade un valor adicional al producto. La exclusividad y el empaque también parecen ser puntos fuertes. Este artículo definitivamente ha elevado mi interés en el producto</p>
+                    <p><a href="#" class="reply">Contestar</a></p>
+                  </div>
+
+                  <ul class="children">
+                    <li class="comment">
+                      <div class="vcard bio">
+                        <img src="img/person_1.jpg" alt="Image placeholder">
+                      </div>
+                      <div class="comment-body">
+                        <h3>John Doe</h3>
+                        <div class="meta">Febrero 12, 2024 6:21pm</div>
+                        <p>El artículo es informativo y presenta el nuevo vodka de manera atractiva. Sin embargo, siento que hubiera sido útil incluir una comparación con otros vodkas premium o una breve mención de la gama de precios para tener una idea más clara del posicionamiento del producto en el mercado. Aun así, la información sobre los sabores y la calidad es bastante completa y bien presentada.</p>
+                        <p><a href="#" class="reply">Reply</a></p>
+                      </div>
+
+
+                      <ul class="children">
+                        <li class="comment">
+                          <div class="vcard bio">
+                            <img src="img/person_1.jpg" alt="Image placeholder">
+                          </div>
+                          <div class="comment-body">
+                            <h3>John Doe</h3>
+                            <div class="meta">Agosto 30, 2024 8:50pm</div>
+                            <p>Como alguien que disfruta de probar nuevas bebidas, encontré este artículo muy emocionante. Carlos Martínez ha descrito el vodka de manera que despierta curiosidad y deseo de probarlo. La variedad de sabores suena deliciosa y la atención al detalle en la descripción del proceso de infusión es impresionante. Definitivamente buscaré este vodka en las tiendas y lo recomendaré a mis amigos.</p>
+                            <p><a href="#" class="reply">Contestar</a></p>
+                          </div>
+
+                            <ul class="children">
+                              <li class="comment">
+                                <div class="vcard bio">
+                                  <img src="img/person_1.jpg" alt="Image placeholder">
+                                </div>
+                                <div class="comment-body">
+                                  <h3>John Doe</h3>
+                                  <div class="meta">Diciembre 12, 2024 1:21am</div>
+                                  <p>El artículo ofrece una visión sólida del nuevo vodka premium. La explicación sobre la infusión de frutas y el proceso de destilación es clara y bien estructurada. Sin embargo, me hubiera gustado ver una sección sobre las recomendaciones de maridaje o cócteles para aprovechar al máximo el producto. A pesar de eso, el artículo es muy bien escrito y proporciona una buena introducción al vodka.</p>
+                                  <p><a href="#" class="reply">Contestar</a></p>
+                                </div>
+                              </li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="img/person_1.jpg" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>John Doe</h3>
+                    <div class="meta">Enero 25, 2024 1:50am</div>
+                    <p>El artículo ofrece una visión completa del nuevo vodka y sus variedades de sabores. Aprecio la explicación detallada del proceso de producción y el énfasis en la calidad de los ingredientes. Sin embargo, me gustaría saber más sobre cómo este vodka se compara con otras opciones premium en el mercado.</p>
+                    <p><a href="#" class="reply">Contestar</a></p>
+                  </div>
+                </li>
+              </ul>
+              <!-- END comment-list -->
+              
+              <div class="comment-form-wrap pt-5">
+                <h3 class="mb-5">Deja un comentario</h3>
+                <form action="#" class="p-5 bg-light">
+                  <div class="form-group">
+                    <label for="name">Nombre *</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Correo *</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="website">Página</label>
+                    <input type="url" class="form-control" id="website">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Publicar comentario" class="btn py-3 px-4 btn-primary">
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+          </div> <!-- .col-md-8 -->
+          <div class="col-lg-4 sidebar pl-lg-5 ftco-animate">
+            <div class="sidebar-box">
+              <form action="#" class="search-form">
+                <div class="form-group">
+                  <span class="fa fa-search"></span>
+                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+                </div>
+              </form>
+            </div>
+            <div class="sidebar-box ftco-animate">
+              <div class="categories">
+                <h3>Categorias</h3>
+                <ul>
+                  <% categories.forEach(function(category) { %>
+                    <li><a href="#"><%= category %> <span class="fa fa-chevron-right"></span></a></li>
+                  <% }); %>
+                </ul>
+              </div>
+            </div>
+            <div class="sidebar-box ftco-animate">
+              <h3>Reciente en el Blog</h3>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(img/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="fa fa-calendar"></span> Apr. 18, 2020</a></div>
+                    <div><a href="#"><span class="fa fa-user"></span> Admin</a></div>
+                    <div><a href="#"><span class="fa fa-comment"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(img/image_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="fa fa-calendar"></span> Apr. 18, 2020</a></div>
+                    <div><a href="#"><span class="fa fa-user"></span> Admin</a></div>
+                    <div><a href="#"><span class="fa fa-comment"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(img/image_3.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="fa fa-calendar"></span> Apr. 18, 2020</a></div>
+                    <div><a href="#"><span class="fa fa-user"></span> Admin</a></div>
+                    <div><a href="#"><span class="fa fa-comment"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3>Tags Relevantes</h3>
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">counsel</a>
+                <a href="#" class="tag-cloud-link">problem</a>
+                <a href="#" class="tag-cloud-link">family</a>
+                <a href="#" class="tag-cloud-link">personal</a>
+                <a href="#" class="tag-cloud-link">business</a>
+                <a href="#" class="tag-cloud-link">computer</a>
+                <a href="#" class="tag-cloud-link">house</a>
+                <a href="#" class="tag-cloud-link">technology</a>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+    <footer class="ftco-footer">
+      <div class="container">
+        <div class="row mb-5">
+        <div class="col-sm-12 col-md">
+          <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2 logo"><a href="#">Licorera <span>Cerdeña</span></a></h2>
+          <p>Un mundo de sabores en cada botella desde hace dos décadas.</p>
+          <ul class="ftco-footer-social list-unstyled mt-2">
+            <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-4">
+          <h2 class="ftco-heading-2">Mi cuenta</h2>
+          <ul class="list-unstyled">
+            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Cuenta</a></li>
+            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Registrarse</a></li>
+            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Iniciar sesión</a></li>
+            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Mi orden</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-4">
+          <h2 class="ftco-heading-2">Información</h2>
+          <ul class="list-unstyled">
+            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Acerca de nosotros</a></li>
+            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Catalogo</a></li>
+            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contacto</a></li>
+            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Términos y condiciones</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md">
+           <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Ayuda</h2>
+          <ul class="list-unstyled">
+            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Nuevo usuario</a></li>
+            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Centro de ayuda</a></li>
+            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>FAQS</a></li>
+            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>PQRS</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">¿Preguntas?</h2>
+            <div class="block-23 mb-3">
+            <ul>
+              <li><span class="icon fa fa-map marker"></span><span class="text">Cl. 53 #47, Laureles - Estadio, Medellín, Laureles, Medellín, Antioquia</span></li>
+              <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+57 392 3929 210</span></a></li>
+              <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">cerdeña@gmail.com</span></a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="container-fluid px-0 py-5 bg-black">
+        <div class="container">
+          <div class="row">
+          <div class="col-md-12">
+        
+            <p class="mb-0" style="color: rgba(255,255,255,.5);">
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> 
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+      </footer>	
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
