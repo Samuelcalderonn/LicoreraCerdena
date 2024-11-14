@@ -7,7 +7,7 @@ const Product = require('./models/Product'); // Importa el modelo de Producto
 // Configuración de la aplicación
 const app = express();
 const port = 3000;
-
+ 
 // Conectar a MongoDB
 mongoose.connect(process.env.MONGODB_URI, {
   serverSelectionTimeoutMS: 30000 // Configura tiempo de espera a 30 segundos
