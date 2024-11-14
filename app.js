@@ -96,3 +96,42 @@ app.get('/product', (req, res) => {
 // Listen on port 3000
 app.listen(port, () => console.info(`Listening on port ${port}`));
 
+
+require('dotenv').config();  // Cargar las variables de entorno desde .env
+const mongoose = require('mongoose');
+
+// Conectar a MongoDB Atlas usando la URI desde .env
+const dbURI = process.env.MONGODB_URI;
+
+// Configuración de Express y rutas básicas
+app.get('/', (req, res) => res.send('Conexión a MongoDB Atlas establecida'));
+
+// Iniciar el servidor solo después de conectar a la base de datos
+mongoose.connection.once('open', () => {
+    app.listen(port, () => console.log(`Servidor ejecutándose en http://localhost:${port}`));
+});
+
+
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://admn:1234@cluster0.liq52.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+const client = new MongoClient(uri, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+});
+async function run() {
+  try {
+    // Connect the client to the server	(optional starting in v4.7)
+    await client.connect();
+    // Send a ping to confirm a successful connection
+    await client.db("admin").command({ ping: 1 });
+    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
+  }
+}
+run().catch(console.dir);
